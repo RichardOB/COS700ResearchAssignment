@@ -24,6 +24,8 @@
 
 \usepackage{url}
 \urldef{\mailsa}\path|richard.obrien.sa@gmail.com|  
+
+\usepackage{cite}
    
 
 \newcommand{\keywords}[1]{\par\addvspace\baselineskip
@@ -161,6 +163,14 @@ the most widely used training algorithm for Multilayer Feedforward Neural Networ
 When solving classification and function approximation problems, FFNNs are the preferred neural network architectures 
 due to their learning and generalization abilities \cite{gong2012training}. Gradient Descent is even used in oil and gas pipelines, 
 training Traditional BP Neural Networks which are responsible for the condition recognition of pipelines \cite{laibin2009novel}.
+
+Despite it's popularity, there exists complexities and limitations intrinsic to Gradient Descent. Gradient Descent is known to fail in
+several different ways, including but not limited to the algorithm reaching a poor local minima, reaching an unsatisfactory glabal minima,
+encountering numerical precision problems, experiencing slow convergence time, and getting stuck in long plateaus \cite{baldi1995gradient,cetin1993global,laibin2009novel,soni2013performance}
+
+However, the reasons for the above limitations are not independant or well understoond \cite{baldi1995gradient}. Knowing in advance, where Gradient 
+Descent is going to fail will help to avoid uneccessary function costs. In order to gain a deeper understanding of what situations Gradient Descent is likely to fail
+will require an anlaysis of low level problem characteristics.
 
 \begin{enumerate}
  \item Give an overview of research that has been conducted on the problem you are investigating.\footnote{See Lecture 2}
