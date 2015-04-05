@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{gong2012training}
+Liang Gong, Chengliang Liu, Yanming Li, and Fuqing Yuan.
+\newblock Training feed-forward neural networks using the gradient descent
+  method with the optimal stepsize.
+\newblock {\em Journal of Computational Information Systems}, 8(4):1359--1371,
+  2012.
+
+\bibitem{laibin2009novel}
+Zhang Laibin, Ye~Yingchun, Liang Wei, Yu~Dongliang, and Wang Zhaohui.
+\newblock A novel bp algorithm for pipeline condition recognition.
+\newblock In {\em Computer Science and Information Engineering, 2009 WRI World
+  Congress on}, volume~4, pages 220--224. IEEE, 2009.
+
+\bibitem{mersmann2011exploratory}
+Olaf Mersmann, Bernd Bischl, Heike Trautmann, Mike Preuss, Claus Weihs, and
+  G{\"u}nter Rudolph.
+\newblock Exploratory landscape analysis.
+\newblock In {\em Proceedings of the 13th annual conference on Genetic and
+  evolutionary computation}, pages 829--836. ACM, 2011.
+
+\end{thebibliography}
