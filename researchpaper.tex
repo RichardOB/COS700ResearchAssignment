@@ -170,12 +170,27 @@ encountering numerical precision problems, experiencing slow convergence time, a
 
 However, the reasons for the above limitations are not independant or well understoond \cite{baldi1995gradient}. Knowing in advance, where Gradient 
 Descent is going to fail will help to avoid uneccessary function costs. In order to gain a deeper understanding of what situations Gradient Descent is likely to fail
-will require an anlaysis of low level problem characteristics.\\\\Fitness Landscape's are a representation of the search space with regards to
+will require an anlaysis of low level problem characteristics.
+\\\\
+Fitness Landscape's are a representation of the search space with regards to
 fitness values\cite{merkuryeva2010comparative}. ``A fitness landscape is obtained by associating a fitness with each point in the search space''\cite{uludag2009fitness} upon which analysis can be performed to derive
-the behaviour and characteristics of a particular algorithm.
+the behaviour and characteristics of a particular algorithm. Error Landscape follows a similar approach but instead associates an error value with each point in the search space.
+
+Fitness Landscapes have most recently been used to measure multiple characteristics of a particular problem. Amongst the many studies on measuring problem characteristics, Fitness Landscapes have been used to characterize
+and distinguish instances of circle packing problems \cite{morgan2014fitness} as well as the characterization of two dimensional numerical optimization problems \cite{munoz2012landscape}. Fitness Landscape Characteristics 
+have been applied to Algorithm Performance Prediction \cite{smith2008towards,malan2014particle,mersmann2013novel} and the Algorithm Selection Problem (ASP) \cite{bischl2012algorithm}. Our study will involve generating an Error Landscape of
+a FFNN using Gradient Descent for various optimisation and regression problems. The Error Landscape will then be studied in order to extract unique problem characteristics which can be compared with algorithm performance.
+
+There exists many Fitness Landscape Analysis techniques which can be used to analyse the characteristics of a landscape. Techniques which require a simple random sample of solution points include Fitness Distance Correlation \cite{gallagher2001fitness}, 
+Exploratory Landscape Analysis \cite{mersmann2011exploratory}, Density of States \cite{rose1996density} and many others \cite{malan2013survey}. For the purpose of this study, Exploratory Landscape Analysis 
+will be used due to the techniques use of ``relatively cheap low level computer generated features'' \cite{mersmann2011exploratory}.
+\\\\
+Exploratory Landscape Analysis involves an ``approach to automatically extract low-level features from systematically sampled points in the decision space'' \cite{mersmann2011exploratory}. These low-level features provide insight into the characteristics
+of the problem. Exploratory Landscape Analysis has become popular due to the low cost of Error Landscape feature extraction. Exploratory Landscape Analysis has been used to analyse problem features of the Travelling Salesperson Problem, resulting in
+the identification of important features responsible for appproximation difficulty by 2-opt based local search strategies \cite{mersmann2013novel}.
 
 \section{Project Planning}
-
+ 
 \begin{enumerate}
 
  \item Identify and describe the specific phases of your work
@@ -225,8 +240,6 @@ subsubsection heading and should not be assigned a number.
 \section{References}\label{references}
 
 Provide a list of references that you have cited in the proposal. See Lecture 2.\\
-
-This is a cite example \cite{mersmann2011exploratory}
 
 \bibliographystyle{plain}
 \bibliography{bibfile}
