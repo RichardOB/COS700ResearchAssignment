@@ -162,7 +162,7 @@ Gradient Descent, a popular optimisation algorithm, forms the basis of Error Bac
 the most widely used training algorithm for Multilayer Feedforward Neural Networks (FFNNs). 
 When solving classification and function approximation problems, FFNNs are the preferred neural network architectures 
 due to their learning and generalization abilities \cite{gong2012training}. Gradient Descent is even used in oil and gas pipelines, 
-training Traditional BP Neural Networks which are responsible for the condition recognition of pipelines \cite{laibin2009novel}.
+training Traditional Back Propagation Neural Networks which are responsible for the condition recognition of pipelines \cite{laibin2009novel}.
 
 Despite it's popularity, there exists complexities and limitations intrinsic to Gradient Descent. Gradient Descent is known to fail in
 several different ways, including but not limited to the algorithm reaching a poor local minima, reaching an unsatisfactory global minima,
@@ -174,13 +174,13 @@ will require an anlaysis of low level problem characteristics.
 \\\\
 Fitness Landscape's are a representation of the search space with regards to
 fitness values\cite{merkuryeva2010comparative}. ``A fitness landscape is obtained by associating a fitness with each point in the search space''\cite{uludag2009fitness} upon which analysis can be performed to derive
-the behaviour and characteristics of a particular algorithm. Error Landscape follows a similar approach but instead associates an error value with each point in the search space.
-
+the behaviour and characteristics of a particular algorithm. Error Landscapes follow a similar approach but instead associate an error value with each point in the search space.
+\\
 Fitness Landscapes have most recently been used to measure multiple characteristics of a particular problem. Amongst the many studies on measuring problem characteristics, Fitness Landscapes have been used to characterize
 and distinguish instances of circle packing problems \cite{morgan2014fitness} as well as the characterization of two dimensional numerical optimization problems \cite{munoz2012landscape}. Fitness Landscape Characteristics 
 have been applied to Algorithm Performance Prediction \cite{smith2008towards,malan2014particle,mersmann2013novel} and the Algorithm Selection Problem (ASP) \cite{bischl2012algorithm}. Our study will involve generating an Error Landscape of
 a FFNN using Gradient Descent for various optimisation and regression problems. The Error Landscape will then be studied in order to extract unique problem characteristics which can be compared with algorithm performance.
-
+\\
 There exists many Fitness Landscape Analysis techniques which can be used to analyse the characteristics of a landscape. Techniques which require a simple random sample of solution points include Fitness Distance Correlation \cite{gallagher2001fitness}, 
 Exploratory Landscape Analysis \cite{mersmann2011exploratory}, Density of States \cite{rose1996density} and many others \cite{malan2013survey}. For the purpose of this study, Exploratory Landscape Analysis 
 will be used due to the techniques use of ``relatively cheap low level computer generated features'' \cite{mersmann2011exploratory}.
@@ -190,6 +190,16 @@ of the problem. Exploratory Landscape Analysis has become popular due to the low
 the identification of important features responsible for appproximation difficulty by 2-opt based local search strategies \cite{mersmann2013novel}. Although Exploratory Landscape Analysis has been used to introduce a novel solution to the 
 Algorithm Selection Problem based on Cost-Sensitive Learning \cite{bischl2012algorithm}, there have been no studies applying Exploratory Landscape Analysis on Neural Network Error Landscapes. This study intends to use Exploratory Landscape Analysis to extract 
 features of a variety of problems which can be used to form a dataset with gradient descent failure indicators. Through Data Mining techniques, this dataset could be used to establish a Gradient Descent Failure Prediction Model. 
+\\\\
+Algorithm Failure Prediction involves finding a link between algorithm performance and problem characteristics. Once a link is found, a failure prediction model can be established, allowing one to know in advace whether or not to apply a particular
+algorithm to the problem at hand. Promising results have been seen from recent research. Malan \textit{et al.} \cite{malan2014particle} used Fitness Landscape metrics on a range of benchmark functions to induce decision tree models for seven different 
+PSO algorithms. The prediction models showed high levels of accuracy for predicting failure, and offered new insight into the algorithms themselves. Smith-Miles \cite{smith2008towards} used meta-learning concepts to find a relationship between search space 
+characteristics and algorithm performance. A Neural Network was then used to successfully predict the performance of three metaheuristics. Bischl \textit{et al.} \cite{bischl2012algorithm} used low-level features, obtained through Exploratory Landscape Analysis, to predict which algorithms
+within a portfolio would perform well for each function. Despite recent success in this area, Failure Prediction has yet to be applied to Gradient Descent using Error Landscape Characteristics. 
+This study will attempt to induce Failure Predictions models using Decision Tree Induction and Neural Networks, based on problem characteristcis found through Exploratory Landscape Analysis.
+\\\\
+Possible Concerns regarding Exploratory Landscape Analysis measures have recently been raised. Munoz \textit{et al.} \cite{munoz2015effects} provides a cautionary examination of the use of ELA measures in black-box continuous optimisation, exploring the effect of translations, and the robustness of the 
+neighborhood structure after performing dimensionality reductions.\\After prediction models have been successfully established, this study will examine the robustness of the ELA measures after boundary constrained weight region adjustments and dimensionality reduction.
 
 \section{Project Planning}
  
@@ -243,7 +253,7 @@ subsubsection heading and should not be assigned a number.
 
 Provide a list of references that you have cited in the proposal. See Lecture 2.\\
 
-\bibliographystyle{plain}
+\bibliographystyle{ieeetr}
 \bibliography{bibfile}
 
 \end{document}
