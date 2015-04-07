@@ -120,25 +120,40 @@ should not be just a cut and paste from the proposal - write it in a more conden
 
 \section{Problem Statement}
 
+Due to a lack of understanding of the link between low level problem characteristics and Gradient Descent performance, 
+it is not known in advance if the use of Gradient Descent to train Feedforward Neural Networks, will fail to solve a particular problem. 
+This leads to potentially avoidable time costs.
+Analysing the relationship between various problem characteristics and the success classes of Gradient Descent applied on such problems, 
+could lead to the establishment of a prediction model. With such a model, the performance of Gradient Descent on a particular problem can be 
+evaluated in advance at a fraction of the cost.
+\\\\
+This work does not aim to solve the Algorithm Selection Problem but instead will help to establish new knowledge regarding problem difficulty and
+Gradient Descent.
+\\\\
+Objectives:
 \begin{enumerate}
- \item Describe the problem that your research will address in as much detail as possible.
- \item Stating your title as a question sometime helps in naming the problem.
- \item Specify and describe your main objectives and sub-objectives.
+ \item To Determine when Gradient Descent will fail based on Landscape Features.
  \begin{enumerate}
-  \item to demonstrate ...
-  \item to evaluate ...
-  \item todetermine ...
-  \item to establish ...
-  \item to argue ...
-  \item to prove ...
-  \item etc
+  \item Establish a dataset comprised of problems upon which Gradient Descent is known to struggle as well as some where it is known to succeed.
+  \item Argue the chosen failure threshold. 
+  \item Evaluate the performance of Gradient Descent on each of the problems by running each problem through the Feed Forward Neural Network.
+  \item Determine problem characteristics by analysing the fitness landscape of each problem using Exploratory Landscape Analysis.
+  \item Evaluate the relationship between Gradient Descent performance and problem characteristics.
  \end{enumerate}
-  \item Define the scope and limitations of the research
-  \begin{enumerate}
-   \item What your work deals with and what it does not deal with
-   \item ``This work does not consider...''
-  \end{enumerate}
-  \item State any assumptions that you are aware of.
+ 
+ \item To Establish a Failure Prediction Model.
+ \begin{enumerate}
+  \item Establish, evaluate and analyse Decision Tree Models.
+  \item Establish and analyse automatic failure prediction using a Neural Network.
+ \end{enumerate}
+ 
+ \item To Analyse the Robustness of the Error Landscape Analysis (ELA) measures.
+ \begin{enumerate}
+  \item Analyse the effect on ELA measures after changes to the search space domain.
+  \item Analyse the effect on ELA measures after changes to the search space boundaries.
+  \item Analyse the effect on ELA measures after function translations.
+ \end{enumerate}
+ 
 \end{enumerate}
 
 \section{Methodology}
