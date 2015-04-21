@@ -1,46 +1,53 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: researchpaper.aux
-The style file: plain.bst
+The style file: ieeetr.bst
 Database file #1: bibfile.bib
-You've used 3 entries,
-            2118 wiz_defined-function locations,
-            519 strings with 4765 characters,
-and the built_in function-call counts, 1593 in all, are:
-= -- 160
-> -- 84
-< -- 3
-+ -- 34
-- -- 30
-* -- 122
-:= -- 249
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 24
+Repeated entry---line 125 of file bibfile.bib
+ : @inproceedings{bischl2012algorithm
+ :                                   ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in munoz2015effects
+Warning--empty year in munoz2015effects
+You've used 18 entries,
+            1876 wiz_defined-function locations,
+            584 strings with 7435 characters,
+and the built_in function-call counts, 6021 in all, are:
+= -- 610
+> -- 186
+< -- 0
++ -- 69
+- -- 51
+* -- 408
+:= -- 784
+add.period$ -- 17
+call.type$ -- 18
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 57
-empty$ -- 112
-format.name$ -- 30
-if$ -- 342
+cite$ -- 20
+duplicate$ -- 334
+empty$ -- 608
+format.name$ -- 51
+if$ -- 1494
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 27
+int.to.str$ -- 18
+missing$ -- 18
+newline$ -- 57
+num.names$ -- 18
+pop$ -- 86
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 0
 quote$ -- 0
-skip$ -- 44
+skip$ -- 242
 stack$ -- 0
-substring$ -- 111
-swap$ -- 24
-text.length$ -- 3
+substring$ -- 499
+swap$ -- 141
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 0
-while$ -- 14
-width$ -- 4
-write$ -- 38
+type$ -- 0
+warning$ -- 2
+while$ -- 69
+width$ -- 20
+write$ -- 182
+(There was 1 error message)

@@ -1,23 +1,99 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{gong2012training}
-Liang Gong, Chengliang Liu, Yanming Li, and Fuqing Yuan.
-\newblock Training feed-forward neural networks using the gradient descent
-  method with the optimal stepsize.
-\newblock {\em Journal of Computational Information Systems}, 8(4):1359--1371,
-  2012.
+L.~Gong, C.~Liu, Y.~Li, and F.~Yuan, ``Training feed-forward neural networks
+  using the gradient descent method with the optimal stepsize,'' {\em Journal
+  of Computational Information Systems}, vol.~8, no.~4, pp.~1359--1371, 2012.
 
 \bibitem{laibin2009novel}
-Zhang Laibin, Ye~Yingchun, Liang Wei, Yu~Dongliang, and Wang Zhaohui.
-\newblock A novel bp algorithm for pipeline condition recognition.
-\newblock In {\em Computer Science and Information Engineering, 2009 WRI World
-  Congress on}, volume~4, pages 220--224. IEEE, 2009.
+Z.~Laibin, Y.~Yingchun, L.~Wei, Y.~Dongliang, and W.~Zhaohui, ``A novel bp
+  algorithm for pipeline condition recognition,'' in {\em Computer Science and
+  Information Engineering, 2009 WRI World Congress on}, vol.~4, pp.~220--224,
+  IEEE, 2009.
+
+\bibitem{baldi1995gradient}
+P.~Baldi, ``Gradient descent learning algorithm overview: A general dynamical
+  systems perspective,'' {\em Neural Networks, IEEE Transactions on}, vol.~6,
+  no.~1, pp.~182--195, 1995.
+
+\bibitem{cetin1993global}
+B.~C. Cetin, J.~W. Burdick, and J.~Barhen, ``Global descent replaces gradient
+  descent to avoid local minima problem in learning with artificial neural
+  networks,'' in {\em Neural Networks, 1993., IEEE International Conference
+  on}, pp.~836--842, IEEE, 1993.
+
+\bibitem{soni2013performance}
+R.~Soni and D.~Puja, ``Performance evaluation of multilayer feed forward neural
+  network for handwritten english vowels characters,'' in {\em Information
+  Systems and Computer Networks (ISCON), 2013 International Conference on},
+  pp.~82--87, IEEE, 2013.
+
+\bibitem{merkuryeva2010comparative}
+G.~Merkuryeva and V.~Bolshakovs, ``Comparative analysis of statistical and
+  information measures for benchmark fitness landscapes,'' in {\em Computer
+  Modeling and Simulation (EMS), 2010 Fourth UKSim European Symposium on},
+  pp.~96--101, IEEE, 2010.
+
+\bibitem{uludag2009fitness}
+G.~Uludag and A.~S. Uyar, ``Fitness landscape analysis of differential
+  evolution algorithms,'' in {\em Soft Computing, Computing with Words and
+  Perceptions in System Analysis, Decision and Control, 2009. ICSCCW 2009.
+  Fifth International Conference on}, pp.~1--4, IEEE, 2009.
+
+\bibitem{morgan2014fitness}
+R.~Morgan and M.~Gallagher, ``Fitness landscape analysis of circles in a square
+  packing problems,'' in {\em Simulated Evolution and Learning}, pp.~455--466,
+  Springer, 2014.
+
+\bibitem{munoz2012landscape}
+M.~A. Munoz, M.~Kirley, and S.~Halgamuge, ``Landscape characterization of
+  numerical optimization problems using biased scattered data,'' in {\em
+  Evolutionary Computation (CEC), 2012 IEEE Congress on}, pp.~1--8, IEEE, 2012.
+
+\bibitem{smith2008towards}
+K.~Smith-Miles, ``Towards insightful algorithm selection for optimisation using
+  meta-learning concepts,'' in {\em WCCI 2008: IEEE World Congress on
+  Computational Intelligence}, pp.~4118--4124, IEEE, 2008.
+
+\bibitem{malan2014particle}
+K.~M. Malan and A.~P. Engelbrecht, ``Particle swarm optimisation failure
+  prediction based on fitness landscape characteristics,'' in {\em Swarm
+  Intelligence (SIS), 2014 IEEE Symposium on}, pp.~1--9, IEEE, 2014.
+
+\bibitem{mersmann2013novel}
+O.~Mersmann, B.~Bischl, H.~Trautmann, M.~Wagner, J.~Bossek, and F.~Neumann, ``A
+  novel feature-based approach to characterize algorithm performance for the
+  traveling salesperson problem,'' {\em Annals of Mathematics and Artificial
+  Intelligence}, vol.~69, no.~2, pp.~151--182, 2013.
+
+\bibitem{bischl2012algorithm}
+B.~Bischl, O.~Mersmann, H.~Trautmann, and M.~Preu{\ss}, ``Algorithm selection
+  based on exploratory landscape analysis and cost-sensitive learning,'' in
+  {\em Proceedings of the 14th annual conference on Genetic and evolutionary
+  computation}, pp.~313--320, ACM, 2012.
+
+\bibitem{gallagher2001fitness}
+M.~Gallagher, ``Fitness distance correlation of neural network error surfaces:
+  A scalable, continuous optimization problem,'' in {\em Machine Learning: ECML
+  2001}, pp.~157--166, Springer, 2001.
 
 \bibitem{mersmann2011exploratory}
-Olaf Mersmann, Bernd Bischl, Heike Trautmann, Mike Preuss, Claus Weihs, and
-  G{\"u}nter Rudolph.
-\newblock Exploratory landscape analysis.
-\newblock In {\em Proceedings of the 13th annual conference on Genetic and
-  evolutionary computation}, pages 829--836. ACM, 2011.
+O.~Mersmann, B.~Bischl, H.~Trautmann, M.~Preuss, C.~Weihs, and G.~Rudolph,
+  ``Exploratory landscape analysis,'' in {\em Proceedings of the 13th annual
+  conference on Genetic and evolutionary computation}, pp.~829--836, ACM, 2011.
+
+\bibitem{rose1996density}
+H.~Ros{\'e}, W.~Ebeling, and T.~Asselmeyer, ``The density of states—a measure
+  of the difficulty of optimisation problems,'' in {\em Parallel Problem
+  Solving from Nature—PPSN IV}, pp.~208--217, Springer, 1996.
+
+\bibitem{malan2013survey}
+K.~M. Malan and A.~P. Engelbrecht, ``A survey of techniques for characterising
+  fitness landscapes and some possible ways forward,'' {\em Information
+  Sciences}, vol.~241, pp.~148--163, 2013.
+
+\bibitem{munoz2015effects}
+M.~A. Munoz and K.~Smith-Miles, ``Effects of function translation and
+  dimensionality reduction on landscape analysis,''
 
 \end{thebibliography}

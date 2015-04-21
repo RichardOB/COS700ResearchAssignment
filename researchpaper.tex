@@ -37,7 +37,7 @@
 \mainmatter  % start of an individual contribution
 
 % first the title is needed
-\title{Predicting Gradient Descent Failure of Feed Forward Neural Networks for Classification}
+\title{Predicting Gradient Descent Failure of Feed Forward Neural Networks}
 
 
 
@@ -70,9 +70,9 @@ COS 700 Research Proposal\\
 \date{March 2015}
 \newpage
 
-\title{Predicting Gradient Descent Failure of Feed Forward Neural Networks for Classification}
+\title{Predicting Backpropagation Failure of Feed Forward Neural Networks}
 % a short form should be given in case it is too long for the running head
-\titlerunning{Predicting Gradient Descent Failue of Feed Forward Neural Networks}
+\titlerunning{Predicting Backpropagation Failue of Feed Forward Neural Networks}
 \author{}
 \institute{}
 
@@ -87,7 +87,7 @@ contain at least 70 and at most 150 words. It should be written using the
 a problem statement, 2) Method(s) used, 3) Expected Results. This is usually easier to write last and
 should not be just a cut and paste from the proposal - write it in a more condensed form.
 
-\keywords{Performance Prediction, Neural Network, Gradient Descent, Error Landscape Analysis}
+\keywords{Performance Prediction, Neural Network, Backpropagation, Error Landscape Analysis}
 \end{abstract}
 
 
@@ -120,43 +120,69 @@ should not be just a cut and paste from the proposal - write it in a more conden
 
 \section{Problem Statement}
 
-Due to a lack of understanding of the link between low level problem characteristics and Gradient Descent performance, 
-it is not known in advance if the use of Gradient Descent to train Feedforward Neural Networks, will fail to solve a particular problem. 
+Due to a lack of understanding of the link between low level problem characteristics and backpropagation performance, 
+it is not known in advance if the use of backpropagation to train feedforward neural networks, will fail to solve a particular problem. 
 This leads to potentially avoidable time costs.
-Analysing the relationship between various problem characteristics and the success classes of Gradient Descent applied on such problems, 
-could lead to the establishment of a prediction model. With such a model, the performance of Gradient Descent on a particular problem can be 
+Analysing the relationship between various problem characteristics and the success classes of backpropagation applied on such problems, 
+could lead to the establishment of a prediction model. With such a model, the performance of backpropagation on a particular problem can be 
 evaluated in advance at a fraction of the cost.
 \\\\
-This work does not aim to solve the Algorithm Selection Problem but instead will help to establish new knowledge regarding problem difficulty and
-Gradient Descent.
+This work does not aim to solve the algorithm selection problem for the training of neural networks but instead will help to establish new knowledge 
+regarding problem difficulty and backpropagation.
 \\\\
 Objectives:
 \begin{enumerate}
- \item To Determine when Gradient Descent will fail based on Landscape Features.
+ \item To characterise the landscape features of a selection of problems.
  \begin{enumerate}
-  \item Establish a dataset comprised of problems upon which Gradient Descent is known to struggle as well as some where it is known to succeed.
+  \item Establish a dataset comprised of problems upon which backpropagation is known to struggle as well as problems where it is known to succeed.
   \item Argue the chosen failure threshold. 
-  \item Evaluate the performance of Gradient Descent on each of the problems by running each problem through the Feed Forward Neural Network.
-  \item Determine problem characteristics by analysing the fitness landscape of each problem using Exploratory Landscape Analysis.
-  \item Evaluate the relationship between Gradient Descent performance and problem characteristics.
+  \item Evaluate the performance of backpropagation on each of the problems by running each problem through the feed forward neural network.
+  \item Determine problem characteristics by analysing the fitness landscape of each problem using exploratory landscape analysis.
+  \item Evaluate the relationship between backpropagation performance and problem characteristics.
  \end{enumerate}
  
- \item To Establish a Failure Prediction Model.
- \begin{enumerate}
-  \item Establish, evaluate and analyse Decision Tree Models.
-  \item Establish and analyse automatic failure prediction using a Neural Network.
- \end{enumerate}
- 
- \item To Analyse the Robustness of the Error Landscape Analysis (ELA) measures.
+  \item To analyse the robustness of the error landscape analysis (ELA) measures for neural network error surfaces.
  \begin{enumerate}
   \item Analyse the effect on ELA measures after changes to the search space domain.
   \item Analyse the effect on ELA measures after changes to the search space boundaries.
   \item Analyse the effect on ELA measures after function translations.
  \end{enumerate}
  
+ \item To establish a failure prediction model.
+ \begin{enumerate}
+  \item Establish, evaluate and analyse decision tree models.
+  \item Establish and analyse automatic failure prediction using a neural network.
+ \end{enumerate}
+ 
 \end{enumerate}
 
 \section{Methodology}
+
+The following section describes the methodologies that will be used during this case study. Error landscape analysis will be applied on neural networks, analysing the 
+insight it may provide on the failure prediction of backpropagation. This will require many objectives to be met. 
+\\\\
+In order to characterise the landscape features of a selection of problems, an initial dataset of problems will need to be collected. To obtain a true representation 
+of the performance of backpropagation, the initial data set will be required to contain problems upon which back propagation is known to fail, as well as problems where it 
+is known to succeed. A collection of classification and regression problems will need to be obtained, and if necessary, prepared for neural network training. The preparation 
+of the dataset will ensure that data is not distorted or missing, influencing the overall performance of the neural network. Data for each problem will then need
+to be split into training and test data. An argument will then need to be made covering the chosen failure threshold.
+\\\\
+A feed forward neural network using backpropagation training will need to be written in a chosen high level language. The feed forward neural network will be tested thoroughly 
+to ensure the correct behaviour of the algorithm. The already established failure threshold will be used to determine the performance of the neural network on each problem after
+all of the unseen data has passed through the neural network after training. Results from the neural network will need to be written to a file in a format which can be 
+analysed and interpreted correctly.
+\\\\
+Exploratory landscape analysis functions, previously written in R will be used to analyse the fitness landscape of each problem. Relevant functions will need to be determined
+and selected. 
+\\\\
+In order to analse the robustness of the ELA measures for neural network error surfaces, an experiment will need to be conducted in which results will be recorded after various changes
+to the search space domain, various changes to the search space boundaries, and various function translations. The recorded results will then need to be compared in order to determine 
+if the measures are robust when applied to neural network error surfaces.
+\\\\
+A collection of machine learning algorithms for data mining tasks such as Weka will be used to establish, evaluate and analyse decision tree models for failure prediction. The dataset 
+created from error landscape analysis and problem success classes will need to be prepared or pre-processed for optimal results. Such pre-processing may even be performed using the 
+chosen data mining tool itself. 
+
 
 \begin{enumerate}
  \item Identify the methods that you plan to use to address your objectives. \footnote{Refer back to Lecture 3 handout}
