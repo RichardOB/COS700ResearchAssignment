@@ -121,9 +121,9 @@ should not be just a cut and paste from the proposal - write it in a more conden
 \section{Problem Statement}
 
 Due to a lack of understanding of the link between low level problem characteristics and backpropagation performance, 
-it is not known in advance if the use of backpropagation to train feedforward neural networks, will fail to solve a particular problem. 
+it is not known in advance if the use of backpropagation to train feedforward neural networks will fail to solve a particular problem. 
 This leads to potentially avoidable time costs.
-Analysing the relationship between various problem characteristics and the success classes of backpropagation applied on such problems, 
+Analysing the relationship between various problem characteristics and the success classes of backpropagation applied on such problems 
 could lead to the establishment of a prediction model. With such a model, the performance of backpropagation on a particular problem can be 
 evaluated in advance at a fraction of the cost.
 \\\\
@@ -134,24 +134,26 @@ Objectives:
 \begin{enumerate}
  \item To characterise the landscape features of a selection of problems.
  \begin{enumerate}
-  \item Establish a dataset comprised of problems upon which backpropagation is known to struggle as well as problems where it is known to succeed.
-  \item Argue the chosen failure threshold. 
+  \item Establish a set of benchmark problems upon which backpropagation is known to struggle as well as problems where it is known to succeed.
+  \item Determine a chosen failure threshold for each problem. 
   \item Evaluate the performance of backpropagation on each of the problems by running each problem through the feed forward neural network.
   \item Determine problem characteristics by analysing the fitness landscape of each problem using exploratory landscape analysis.
-  \item Evaluate the relationship between backpropagation performance and problem characteristics.
+  \item Investigate the relationship between backpropagation performance and problem characteristics.
  \end{enumerate}
  
   \item To analyse the robustness of the error landscape analysis (ELA) measures for neural network error surfaces.
  \begin{enumerate}
-  \item Analyse the effect on ELA measures after changes to the search space domain.
-  \item Analyse the effect on ELA measures after changes to the search space boundaries.
-  \item Analyse the effect on ELA measures after function translations.
+  \item Analyse the effect on ELA measures after changes to the search space boundaries (range of weight values).
+  \item Analyse the effect of ELA measure parameters in the context of neural networks.
  \end{enumerate}
  
- \item To establish a failure prediction model.
+ \item To establish a failure prediction model for backpropagation.
  \begin{enumerate}
-  \item Establish, evaluate and analyse decision tree models.
+  \item Establish a dataset for data mining.
+  \item Perform decision tree induction using data mining tools.
+  \item Investigate the performance of decision tree models created with different parameters.
   \item Establish and analyse automatic failure prediction using a neural network.
+  \item Investigate the performance of a lazy classifier such as nearest neighbor. 
  \end{enumerate}
  
 \end{enumerate}
@@ -161,41 +163,27 @@ Objectives:
 The following section describes the methodologies that will be used during this case study. Error landscape analysis will be applied on neural networks, analysing the 
 insight it may provide on the failure prediction of backpropagation. This will require many objectives to be met. 
 \\\\
-In order to characterise the landscape features of a selection of problems, an initial dataset of problems will need to be collected. To obtain a true representation 
-of the performance of backpropagation, the initial data set will be required to contain problems upon which back propagation is known to fail, as well as problems where it 
+In order to characterise the landscape features of a selection of problems, an initial set of benchmark problems will need to be collected. To obtain a true representation 
+of the performance of backpropagation, the initial set of benchmark problems will be required to contain problems upon which back propagation is known to fail, as well as problems where it 
 is known to succeed. A collection of classification and regression problems will need to be obtained, and if necessary, prepared for neural network training. The preparation 
-of the dataset will ensure that data is not distorted or missing, influencing the overall performance of the neural network. Data for each problem will then need
-to be split into training and test data. An argument will then need to be made covering the chosen failure threshold.
+of the dataset will ensure that data is not distorted or missing, influencing the overall performance of the neural network. The dataset for each problem will then need
+to be split into training and test data. An argument will then need to be made regarding each chosen failure threshold, determined based on a review of the literature.
 \\\\
 A feed forward neural network using backpropagation training will need to be written in a chosen high level language. The feed forward neural network will be tested thoroughly 
 to ensure the correct behaviour of the algorithm. The already established failure threshold will be used to determine the performance of the neural network on each problem after
-all of the unseen data has passed through the neural network after training. Results from the neural network will need to be written to a file in a format which can be 
+all of the unseen data has passed through the trained neural network. Results from the neural network will need to be written to a file in a format which can be 
 analysed and interpreted correctly.
 \\\\
 Exploratory landscape analysis functions, previously written in R will be used to analyse the fitness landscape of each problem. Relevant functions will need to be determined
 and selected. 
 \\\\
-In order to analse the robustness of the ELA measures for neural network error surfaces, an experiment will need to be conducted in which results will be recorded after various changes
-to the search space domain, various changes to the search space boundaries, and various function translations. The recorded results will then need to be compared in order to determine 
+In order to analyse the robustness of the ELA measures for neural network error surfaces, experiments will need to be conducted in which results will be recorded after various changes
+to the search space boundaries as well as various changes to ELA parameters. The recorded results will then need to be compared in order to determine 
 if the measures are robust when applied to neural network error surfaces.
 \\\\
-A collection of machine learning algorithms for data mining tasks such as Weka will be used to establish, evaluate and analyse decision tree models for failure prediction. The dataset 
-created from error landscape analysis and problem success classes will need to be prepared or pre-processed for optimal results. Such pre-processing may even be performed using the 
-chosen data mining tool itself. 
-
-
-\begin{enumerate}
- \item Identify the methods that you plan to use to address your objectives. \footnote{Refer back to Lecture 3 handout}
- \begin{enumerate}
-  \item Which paradigms and tools?
-  \item What code do you expect to write?
-  \item What experiments will you need to conduct? (Briefly outline)
- \end{enumerate}
- \item Must tie back to your research objectives.
- \item Should be clear that methods are appropriate \footnote{Explain why alternative methods are not proposed}
-
-\end{enumerate}
-
+A collection of machine learning algorithms for data mining tasks such as Weka will be used to establish, evaluate and analyse decision tree models for failure prediction.
+A neural network will be used for automatic failure prediction, potentially creating a more accurate prediction model. A lazy classifier such as nearest neighbor will also be
+used in an attempt to predict failure. 
 
 \section{Literature Survey}
 
